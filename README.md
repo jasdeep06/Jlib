@@ -35,7 +35,7 @@ To use the regression implementation first import the LinearReg class and instan
         argument y(labels corrosponding to cross validation set in form of matrix such that each label forms a row)
  
  
- #### Neural network
+#### Neural network
  
 To use the neural network implementation,first import the NN class and then instantiate it:
           

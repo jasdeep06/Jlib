@@ -124,6 +124,22 @@ class NN:
 
             print(self.loss(y))
         plt.show()
+    
+    
+    def predict(self,X):
+        final_layer=self.forwardProp(X)     #M*output
+        max_index=np.argmax(final_layer,axis=1)     #M*1
+
+        return max_index
+
+    def cross_validate(self,X,y):
+
+        max_index=self.predict(X)
+        correct_predictions_boolean=y==max_index
+        correct_predictions=np.sum(correct_predictions_boolean)
+        total_predictions=np.shape(y)[0]
+        accuracy=(correct_predictions/total_predictions)*100        #defined as correct predictions out of total predictions
+        print('accuracy of prediction is',accuracy)
 
 
 

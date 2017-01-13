@@ -11,6 +11,6 @@ y_cv=np.matrix('0;1;1')
 
 
 print(network.fit(X,y))
-print(network.predict(X_tr))
-network.cross_validate(X_tr,y_cv)
+print(network.predict(X_cv))
+network.cross_validate(X_cv,y_cv)
 

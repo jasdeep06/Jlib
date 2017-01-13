@@ -139,7 +139,7 @@ class NN:
         correct_predictions=np.sum(correct_predictions_boolean)
         total_predictions=np.shape(y)[0]
         accuracy=(correct_predictions/total_predictions)*100        #defined as correct predictions out of total predictions
-        print('accuracy of prediction is',accuracy)
+        return accuracy
 
 
 
